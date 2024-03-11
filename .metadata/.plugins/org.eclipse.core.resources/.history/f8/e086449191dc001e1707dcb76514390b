@@ -1,0 +1,19 @@
+package client;
+
+import model.Employee;
+import service.EmployeeService;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// entry point of my application
+		EmployeeService eservice = new EmployeeService();
+		int Id = 2;
+		Employee result = eservice.getEmployeeById(Id);
+		System.out.println("EMP NAME : "+ result.getEmpname());
+		System.out.println("EMP Salary : "+ result.getEmpsalary());
+		System.out.println("EMP DEPT : "+ result.getEmpdept());
+	}
+
+}

@@ -1,0 +1,9 @@
+package jdbcConnectivity;
+
+public class DbConnectivity {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

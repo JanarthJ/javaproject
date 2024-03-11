@@ -1,0 +1,36 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import model.Student;
+
+public class StudentDAO {
+	private Connection con;
+	public StudentDAO() {
+		//		Step 1 : loading the driver
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public Student fetchStudent() {
+		Student stu = null;
+		try {
+			
+		}catch(SQLException e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+	
+}

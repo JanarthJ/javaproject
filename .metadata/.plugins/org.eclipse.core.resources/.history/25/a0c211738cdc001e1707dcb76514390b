@@ -1,0 +1,15 @@
+package dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class EmployeeDAO {
+	private Connection con;
+	public EmployeeDAO() {
+		try {
+			
+			
+			
+		}
+	}
+}
