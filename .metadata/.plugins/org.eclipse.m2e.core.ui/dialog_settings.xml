@@ -45,13 +45,18 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="exlrtrainingorg"/>
+			<item value="exlrtraining"/>
 			<item value="exlr"/>
 		</list>
 		<list key="name">
+			<item value="studentapp"/>
 			<item value="sampleWebPro"/>
 			<item value="webproject"/>
 		</list>
 		<list key="artifactId">
+			<item value="junittestproject"/>
+			<item value="studentapp"/>
 			<item value="samplepro"/>
 			<item value="sampleWebPro"/>
 			<item value="webproject"/>

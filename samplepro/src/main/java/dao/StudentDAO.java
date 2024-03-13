@@ -13,20 +13,14 @@ import model.Student;
 public class StudentDAO {
 	private Connection con;
 	Properties prop = new Properties(); 
-	public StudentDAO() {
-		
-		try {
-			//	Step 1 : loading the driver
-			//Class.forName("com.mysql.jdbc.Driver");
-			//con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","");
-			
+	public StudentDAO() {		
+		try {					
 			FileInputStream ip= new FileInputStream("C:\\Users\\Janarthanan\\Downloads\\eclipsespace\\samplepro\\src\\main\\resources\\config.properties");
 			prop.load(ip);
 			String dname = prop.getProperty("ds.database-driver");
 			String dbConnUrl = prop.getProperty("ds.url");
 			String dbUserName = prop.getProperty("ds.username");
 			String dbPassword = prop.getProperty("ds.password");
-
 			if (dname == null || dbConnUrl == null || dbUserName == null || dbPassword == null) {
 			    throw new IllegalArgumentException("One or more properties are missing in ds-connection.properties.");
 			}else {

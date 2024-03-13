@@ -16,10 +16,7 @@ public class Main { // concreate class
 	        } catch (IOException e) {
 	            System.out.println("An error occurred while creating the file.");
 	            e.printStackTrace();
-	        }
-
-
-		
+	        }		
 	}	
 }
 
