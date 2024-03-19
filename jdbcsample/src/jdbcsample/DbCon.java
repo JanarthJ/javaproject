@@ -24,12 +24,21 @@ public class DbCon {
 			//prepared Statement
 			String query1 =  "select * from employee where id  = ?";
 			
+//			int add(int a,int b) {
+				
+//			}
 			
-//			CallableStatement clst = conn.prepareCall("{call GetEmployeeById(?)}")
+//			int sum(int a) {
+				
+//			}
+//																														2,300
+//			CallableStatement clst = conn.prepareCall("{call GetEmployeeById(?,?)}")
 			 // Create a CallableStatement object
             try (PreparedStatement ps =  conn.prepareStatement(query1);) {
                 // Set input parameters, if any
             	ps.setInt(1, 2); // Assuming the employee ID is 1            	
+//            	ps.setInt(2, 300);
+//            	ps.setInt(3, 40);
             	
 //            	select * from employee where id = empid;
                 // Execute the stored procedure

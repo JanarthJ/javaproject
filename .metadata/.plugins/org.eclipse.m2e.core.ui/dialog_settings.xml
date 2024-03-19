@@ -45,8 +45,9 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="exlrtrainingorg"/>
+			<item value="exclrtraning"/>
 			<item value="exlrtraining"/>
+			<item value="exlrtrainingorg"/>
 			<item value="exlr"/>
 		</list>
 		<list key="name">
@@ -55,6 +56,8 @@
 			<item value="webproject"/>
 		</list>
 		<list key="artifactId">
+			<item value="violatingSRP"/>
+			<item value="singleRPproject"/>
 			<item value="junittestproject"/>
 			<item value="studentapp"/>
 			<item value="samplepro"/>
